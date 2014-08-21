@@ -1,0 +1,519 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <title>Importación &gt; Asientos Contables</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+   <meta name="description" content="Asientos Contables">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+   <!-- This line forces IE8 into IE7 mode, safer until IE8 is better known -->
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+   <link type="text/css" href="default.css" rel="stylesheet">
+   <link type="text/css" href="custom.css" rel="stylesheet">
+   <script type="text/javascript" src="nsh.js"></script>
+
+<script type="text/javascript">   
+// Toggle Toggler 
+
+var toggleCount=false;
+var switchState;
+
+function toggleToggles() {
+
+    if (!toggleCount) {
+     toggleCount = true;
+     HMToggleExpandAll(true);
+     switchState = true;
+     }
+   
+     else if (switchState) {
+        HMToggleExpandAll(false);
+        switchState = false;
+        }
+        
+     else  {
+        HMToggleExpandAll(true);
+        switchState = true;
+        } 
+    }
+</script>
+   
+<!-- non-scrolling headers for CHM and browser-based help, local styles-->
+<style TYPE="text/css" media="screen"> 
+   body {    
+      margin:0; 
+      padding:0; 
+      overflow: auto; 
+      background: #FFFFFF; 
+   } 
+   #idheader { 
+      width:100%; 
+      height:auto; 
+      padding: 0; 
+      margin: 0; 
+} 
+    #idheaderbg  {
+    background: #6F6F6F; 
+}
+
+   #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+   #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+   #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+   #callout-table a {text-decoration: none; color: blue;}
+   #callout-table a:visited {text-decoration: none; color: blue;}
+   #overview-table a {text-decoration: none; color: black;}
+   #overview-table a:visited {text-decoration: none; color: black;}
+   #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}
+   </style>
+   
+<style TYPE="text/css" MEDIA="print">
+<!--
+/* Hide navigation links and add space between header
+     and text in the printed version. Not valid for eBooks. */
+#idnav { display:none;	 }
+.topichead { padding: 5px 5px 20px 5px; }
+-->
+</style>   
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?asientos_contables.htm"; }
+  else { parent.quicksync('a1.1'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+<!--ZOOMSTOP-->
+
+<div id="idheader">
+<div id="idheaderbg">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" 
+       style="margin: 0px; background: url(header_bg.jpg);">
+
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="importacion.htm">Importación</a>&nbsp;&gt;</p>
+   <p class="p_Heading1"><span class="f_Heading1">Asientos Contables</span></p>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="importacion.htm"
+        onmouseover="document.images.prev.src='btn_prev_h.gif'" 
+        onmouseout="document.images.prev.src='btn_prev_n.gif'"
+        ><img name=prev src="btn_prev_n.gif" border=0 alt="Previous page"
+        ></a><a href="importacion.htm"
+        onmouseover="document.images.main.src='btn_home_h.gif'" 
+        onmouseout="document.images.main.src='btn_home_n.gif'"><img name=main src="btn_home_n.gif" border=0 alt="Return to chapter overview"
+        ></a><a href="expediente.htm"
+        onmouseover="document.images.next.src='btn_next_h.gif'" 
+        onmouseout="document.images.next.src='btn_next_n.gif'"><img name=next src="btn_next_n.gif" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>
+  <tr><td colspan="2" style="height: 3px; background: url(header_bg_shadow.gif)"></td></tr>
+</table>
+</div>
+
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+
+</div>  
+
+
+
+<div id="idcontent"><div id="innerdiv"> 
+<!--ZOOMRESTART-->
+<p style="text-align: justify; line-height: 1.50;"><a name="expedient_contabil"></a><span style="font-family: 'Tahoma'; font-weight: bold;">Registros de Expediente en la Contabilidad</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">En el Menú Contabilidad, opción &gt;&gt;Generación de Comprobantes&gt;&gt;Configuración de la Generación de Comprobantes&gt;&gt;Pestaña Dominios&gt;&gt;</span><span style="font-family: 'Tahoma';">, deberá configurar la cuenta contable </span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">“Gastos de Documentos del Expediente”</span><span style="font-family: 'Tahoma';"> , a ésta van todos los gastos estimados e indirectos propios de la compra de repuestos por importación. En esta sección a finalidad de entender el proceso contable de importación, veamos un ejemplo.</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.50;"><tr style="vertical-align:baseline" valign="baseline"><td width="28"><span style="font-size: 10pt; font-family: 'Tahoma'; color: #000000;">1.</span></td><td><span style="font-family: 'Tahoma';">Imaginemos un valor oficial de Bs. 11,30 por cada $. Compramos 100 cantidades de un repuesto A, por $ 25 c/u (sería Bs. 28.250,00); y, en la misma factura también compramos 100 cantidades de un repuesto B, por $ 30 c/u (sería Bs. 33.900). Entonces, el asiento contable para registrar el monto total de la compra (sería por Bs. 62.150,00) así:</span></td></tr></table></div><p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Caso Común: Documento Comercial Compra de Repuestos por Bs. 62.150,00</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">CXP Proveedores Internacionales</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">62.150,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Inventario de Repuestos</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">62.150,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.50;"><tr style="vertical-align:baseline" valign="baseline"><td width="28"><span style="font-size: 10pt; font-family: 'Tahoma'; color: #000000;">2.</span></td><td><span style="font-family: 'Tahoma';">Adicionalmente, asociados al </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Documento Comercial</span><span style="font-family: 'Tahoma';"> anterior, tenemos cuatro (4) gastos estimados e indirectos de importación. El primero, almacenaje por Bs. 1.000,00; el segundo, seguro por Bs. 1.500,00; el tercero, transporte por Bs. 2.000,00; y el cuarto, comisión agente aduanal por Bs. 1.000,00. </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">(Nota: supongamos que para el caso relacionado al asiento contable número 1, vamos asociar el </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; color: #ff0000;">75% de cada gasto para el Documento Comercial, </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; color: #0000ff;">y el</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; color: #ff0000;"> </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; color: #0000ff;">25% restante de cada gasto que es para otro Documento Comercial u Otro Expediente).</span></td></tr></table></div><p style="text-align: justify; text-indent: -1px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; text-indent: -1px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial Almacenaje de Importación por Bs. 1.000,00 + Bs. 120,00 de IVA</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">CXP</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">1.120,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Impuestos en Compras (IVA)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">120,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">(25% del gasto va a otro documento)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">250,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; height:48px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; height:48px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">750,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; height:48px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="width:28px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial Seguro de Importación por Bs. 1.500,00 + Bs 180,00 de IVA</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">CXP</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">1.680,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Impuestos en Compras (IVA)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">180,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">(25% del gasto va a otro documento)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">375,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">1.125,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.50;">&nbsp;</p>
+<p style="line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial Transporte de Importación por Bs. 2.000,00 + Bs. 240,00 de IVA</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">CXP</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">2.240,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Impuestos en Compras (IVA)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">240,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">(25% del gasto va a otro documento)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">500,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">1.500,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.50;">&nbsp;</p>
+<p style="text-align: justify; line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma';">El asiento contable del gasto estimado </span><span style="font-family: 'Tahoma'; font-weight: bold; text-decoration: underline;">&lt;&lt;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Comisión del Agente Aduanal&gt;&gt;</span><span style="font-family: 'Tahoma'; font-weight: bold;"> </span><span style="font-family: 'Tahoma';">no se refleja en la contabilidad hasta que no se haga el registro del </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial</span><span style="font-family: 'Tahoma';"> así como se verá más adelante en el apartado contable número 5.</span></p>
+<p style="line-height: 1.50;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.50;"><tr style="vertical-align:baseline" valign="baseline"><td width="28"><span style="font-size: 10pt; font-family: 'Tahoma'; color: #000000;">3.</span></td><td><span style="font-family: 'Tahoma';">Ahora bien, veamos los asientos contable del apartado contable número 2 correspondiente a los </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documentos No Comerciales</span><span style="font-family: 'Tahoma';"> en un solo asiento, tal como lo hará la aplicación </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Infoauto</span><span style="font-family: 'Tahoma';">:</span></td></tr></table></div><p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="width:28px">&nbsp;</span></p>
+<p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="width:28px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documentos No Comerciales en el Mismo Asiento por Bs. 4.375,00</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Inventario de Repuestos</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">4.375,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">3.375,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Gastos Estimados de Importación</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">1.000,00</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="line-height: 1.50;">&nbsp;</p>
+<p style="text-align: justify; line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma';">Vale decir, que el monto de los gastos indirectos de almacenaje, seguro y transporte se registran en la cuenta contable </span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">&lt;&lt;Gastos de Expediente de Importación, se configura en la Ficha Dominios&gt;&gt;.</span><span style="font-family: 'Tahoma';"> El monto del gasto estimado &nbsp;se registra en la cuenta contable </span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">&lt;&lt;Comisión Agente Aduanal, se configura en la Ficha Cargos y</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;"> </span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">Descuentos, además de en la Ficha Conceptos)</span><span style="font-family: 'Tahoma';">. El motivo por el que los montos de los gastos se vayan a una cuenta contable distinta, se debe al hecho de que los gastos de almacenaje, seguro y transporte tienen soporte físico al momento de registrar la recepción de la importación </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">(son Documentos No Comerciales)</span><span style="font-family: 'Tahoma';">; en cambio, el gasto comisión de agente aduanal no tiene soporte físico al momento de registrar la recepción de la importación </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">(es un Ajuste Estimado, por eso va directo a la cuenta contable del gasto "Comisión Agente Aduanal " ó a la cuenta contable Gastos Estimados de Importación)</span><span style="font-family: 'Tahoma';">.</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma';">En algunos casos los documentos comerciales de compra reflejan por ejemplo otros montos adicionales, tal es el caso del </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Impuesto Internacional</span><span style="font-family: 'Tahoma';">, éste también debe ser considerado un ajuste estimado, puesto que es un crédito fiscal que no podrá aprovecharse ante el organismo tributario nacional correspondiente.</span></p>
+<p style="line-height: 1.50;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.50;"><tr style="vertical-align:baseline" valign="baseline"><td width="28"><span style="font-size: 10pt; font-family: 'Tahoma'; color: #000000;">4.</span></td><td><span style="font-family: 'Tahoma';">Luego de estar registrados y asociados tanto el </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Documento Comercial</span><span style="font-family: 'Tahoma';"> como los gastos estimados e indirectos de los </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Documentos No Comerciales</span><span style="font-family: 'Tahoma';"> al expediente, el asiento contable en </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Infoauto</span><span style="font-family: 'Tahoma';"> sería:</span></td></tr></table></div><p style="text-align: justify; text-indent: -28px; line-height: 1.50; margin: 0px 0px 0px 28px;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">CXP Proveedores Internacionales</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">62.150,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Inventario de Repuestos</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">66.525,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos de Expedientes de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">3.375,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Gastos Estimados de Importación</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">1.000,00</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="line-height: 1.50;"><tr style="vertical-align:baseline" valign="baseline"><td width="28"><span style="font-size: 10pt; font-family: 'Tahoma'; color: #000000;">5.</span></td><td><span style="font-family: 'Tahoma';">Por último, supongamos que nos ha llegado el físico del gasto </span><span style="font-family: 'Tahoma'; font-style: italic; text-decoration: underline;">&lt;&lt;Comisión de Agente Aduanal&gt;&gt;</span><span style="font-family: 'Tahoma';">, es decir, deja de ser un </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Ajuste Estimado</span><span style="font-family: 'Tahoma';">, y se convierte en un verdadero </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold; text-decoration: underline;">Documento No Comercial</span><span style="font-family: 'Tahoma';">, no has llegado el documento o soporte del gasto en físico. Entonces, el asiento contable en </span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Infoauto</span><span style="font-family: 'Tahoma';"> sería:</span></td></tr></table></div><p style="line-height: 1.50;">&nbsp;</p>
+<p style="line-height: 1.50;"><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Caso 1: Menor al Estimado de Bs. 1.000,00</span></p>
+<p style="line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial de Ajuste Estimado Comisión de Agente Aduanal por Bs. 600,00 + Bs. 72,00 de IVA</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Cuenta por Pagar (CXP)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">672,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Impuesto en Compras (IVA)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">72,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">Gastos Estimados de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">(25% del gasto va a otro documento)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">150,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos Estimados de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">450,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: center; line-height: 1.50;">&nbsp;</p>
+<p style="line-height: 1.50;"><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Caso 2: Mayor al Estimado de Bs. 1.000,00</span></p>
+<p style="line-height: 1.50;"><span style="width:48px">&nbsp;</span><span style="font-family: 'Tahoma'; font-style: italic; font-weight: bold;">Documento No Comercial de Ajuste Estimado Comisión de Agente Aduanal por Bs. 1200,00 + Bs. 144,00 de IVA</span></p>
+<div style="text-align: left; text-indent: 0px; line-height: 1.50; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="4" border="0" style="border: none; border-spacing:0px; border-collapse: collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Descripción</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Debe</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: center; line-height: 1.50;"><span style="font-family: 'Tahoma'; font-weight: bold;">Haber</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Cuenta por Pagar (CXP)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">1.344,00</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma';">Impuesto en Compras (IVA)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">144,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">Gastos Estimados de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #0000ff;">(25% del gasto va a otro documento)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">300,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">Gastos Estimados de Importación</span></p>
+<p style="text-align: justify; line-height: 1.50;"><span style="font-family: 'Tahoma'; color: #ff0000;">(75% del gasto para este ejemplo)</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="font-family: 'Tahoma';">900,00</span></p>
+</td>
+<td valign="top" width="223" style="width:223px; border: solid 1px #000000;"><p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: center; line-height: 1.50;">&nbsp;</p>
+<p style="text-align: center; line-height: 1.50;">&nbsp;</p>
+<hr noshade size=2 style="color : #808080"><p class="p_Título3" style="text-align: right; line-height: 1.50;"><input type="button" style="font-family:MS Sans Serif;font-size:8pt;color:#000000" value="Volver al Inicio" onclick="self.location.href='asientos_contables.htm'"></p>
+<p style="text-align: right; line-height: 1.50;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: right; line-height: 1.50;"><input type="button" style="font-family:MS Sans Serif;font-size:8pt;color:#000000" value="Volver al Índice Principal" onclick="self.location.href='importacion.htm'"></p>
+<p style="text-align: center; line-height: 1.50;">&nbsp;</p>
+<p style="text-align: center; line-height: 1.50;">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript"> 
+<!-- 
+var lastSlashPos = document.URL.lastIndexOf("/") >
+document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") :
+document.URL.lastIndexOf("\\");
+if( document.URL.substring( lastSlashPos + 1, lastSlashPos + 4
+).toLowerCase() != "~hh" )
+{
+    nsrInit();
+}
+--> 
+</script> 
+</body>
+</html>
